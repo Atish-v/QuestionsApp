@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If you don't want to use storyboards, here's something to get you started.
         // Just remember to delete the storyboard and remove it's reference in the project settings.
 //        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        let viewController = ViewController()
+//        let viewController = ViewController() // Swift version
+//        let viewController = ObjcViewController() // Objc version
 //        self.window?.rootViewController = viewController
 //        self.window?.makeKeyAndVisible()
 

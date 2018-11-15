@@ -8,10 +8,14 @@
 
 import Foundation
 
-final class ChallengeAPI {
+@objc final class ChallengeAPI: NSObject {
     let service: Service
 
-    init(service: Service = NetworkService()) {
+    @objc convenience override init() {
+        self.init(service: NetworkService())
+    }
+
+    init(service: Service) {
         self.service = service
     }
 
