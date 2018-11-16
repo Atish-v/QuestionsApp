@@ -37,16 +37,18 @@ import Foundation
 
     func allQuestionsAsync(request: Requests = APIRequests.questions, _ completion: @escaping (Result<[Question]>) -> Void) {
         service.get(request: request) { result in
-            switch result {
-            case .success(let data):
-                do {
-                    let questions: Questions = try JSONDecoder().decode(Questions.self, from: data)
-                    completion(.success(questions.questions))
-                } catch {
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let data):
+                    do {
+                        let questions: Questions = try JSONDecoder().decode(Questions.self, from: data)
+                        completion(.success(questions.questions))
+                    } catch {
+                        completion(.error(error))
+                    }
+                case .error(let error):
                     completion(.error(error))
                 }
-            case .error(let error):
-                completion(.error(error))
             }
         }
     }
