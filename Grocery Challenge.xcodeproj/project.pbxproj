@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03544603226FC39D00BB5FD2 /* GroceryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03544602226FC39D00BB5FD2 /* GroceryTableViewCell.swift */; };
+		3B882C8F22710EE600A124F6 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B882C8E22710EE600A124F6 /* QuestionView.swift */; };
+		3B882C9122710EFE00A124F6 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B882C9022710EFE00A124F6 /* AnswerView.swift */; };
+		3B882C9322710F1700A124F6 /* QueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B882C9222710F1700A124F6 /* QueryView.swift */; };
+		3B882C9522710FB200A124F6 /* AnswerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B882C9422710FB200A124F6 /* AnswerImageView.swift */; };
 		C11488BB20BE12DC00429C8F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11488BA20BE12DC00429C8F /* Service.swift */; };
 		C1AFACA2219E1E9C00C56C7E /* ObjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AFACA1219E1E9C00C56C7E /* ObjcViewController.m */; };
 		C1AFACA4219E203C00C56C7E /* ChallengeAPI+Objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AFACA3219E203C00C56C7E /* ChallengeAPI+Objc.swift */; };
@@ -25,6 +30,11 @@
 
 /* Begin PBXFileReference section */
 		0155E20476FAF37D7E75EA86 /* Pods-Grocery Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grocery Challenge/Pods-Grocery Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		03544602226FC39D00BB5FD2 /* GroceryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryTableViewCell.swift; sourceTree = "<group>"; };
+		3B882C8E22710EE600A124F6 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		3B882C9022710EFE00A124F6 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		3B882C9222710F1700A124F6 /* QueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryView.swift; sourceTree = "<group>"; };
+		3B882C9422710FB200A124F6 /* AnswerImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerImageView.swift; sourceTree = "<group>"; };
 		56CD3724179AF048BF184F5D /* Pods_Grocery_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grocery_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11488BA20BE12DC00429C8F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C1AFAC9F219E1E9B00C56C7E /* Grocery Challenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grocery Challenge-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -66,6 +76,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3B882C8D22710ECD00A124F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B882C8E22710EE600A124F6 /* QuestionView.swift */,
+				3B882C9022710EFE00A124F6 /* AnswerView.swift */,
+				3B882C9222710F1700A124F6 /* QueryView.swift */,
+				3B882C9422710FB200A124F6 /* AnswerImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5D4D1E840D3A08312318CCA8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +117,7 @@
 		C1DDE15C20A9FF3500FD5273 /* Grocery Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				3B882C8D22710ECD00A124F6 /* View */,
 				C1DDE17920AA0B6D00FD5273 /* models */,
 				C1DDE17820AA090D00FD5273 /* Extensions */,
 				C1DDE17720AA08FC00FD5273 /* API */,
@@ -109,6 +131,7 @@
 				C1AFACA0219E1E9C00C56C7E /* ObjcViewController.h */,
 				C1AFACA1219E1E9C00C56C7E /* ObjcViewController.m */,
 				C1AFAC9F219E1E9B00C56C7E /* Grocery Challenge-Bridging-Header.h */,
+				03544602226FC39D00BB5FD2 /* GroceryTableViewCell.swift */,
 			);
 			path = "Grocery Challenge";
 			sourceTree = "<group>";
@@ -235,12 +258,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B882C9322710F1700A124F6 /* QueryView.swift in Sources */,
 				C1DDE17020AA010000FD5273 /* Result.swift in Sources */,
 				C11488BB20BE12DC00429C8F /* Service.swift in Sources */,
+				3B882C9122710EFE00A124F6 /* AnswerView.swift in Sources */,
 				C1DDE16020A9FF3500FD5273 /* ViewController.swift in Sources */,
+				03544603226FC39D00BB5FD2 /* GroceryTableViewCell.swift in Sources */,
 				C1AFACA4219E203C00C56C7E /* ChallengeAPI+Objc.swift in Sources */,
 				C1DDE17620AA042D00FD5273 /* UIImageExtensions.swift in Sources */,
 				C1AFACA2219E1E9C00C56C7E /* ObjcViewController.m in Sources */,
+				3B882C8F22710EE600A124F6 /* QuestionView.swift in Sources */,
+				3B882C9522710FB200A124F6 /* AnswerImageView.swift in Sources */,
 				C1DDE17B20AA0BA900FD5273 /* Question.swift in Sources */,
 				C1DDE17420AA015F00FD5273 /* ChallengeAPI.swift in Sources */,
 				C1DDE15E20A9FF3500FD5273 /* AppDelegate.swift in Sources */,

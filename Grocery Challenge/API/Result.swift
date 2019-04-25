@@ -3,7 +3,7 @@
 //  Grocery Challenge
 //
 //  Created by Andrew Crookston on 5/14/18.
-//  Copyright © 2018 Instacart. All rights reserved.
+//  Copyright © 2018 XYZ. All rights reserved.
 //
 
 import Foundation
